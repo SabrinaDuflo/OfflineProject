@@ -1,0 +1,15 @@
+<div>
+    <label>
+        First Name:
+        <input type="text" [formControl]="fName">
+    </label>
+    <label>
+        Last Name:
+        <input type="text" [formControl]="lName">
+    </label>
+    <label>
+        Email:
+        <input type="email" [formControl]="email">
+    </label><br>
+    <button (click)="submit(fName.value, lName.value, email.value)">Submit</button>
+</div>
